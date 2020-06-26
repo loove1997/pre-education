@@ -16,3 +16,10 @@
 5 * 9 = 45
 
 """
+
+print('<입력>')
+dan = input('출력할 단을 입력해주세요 : ')
+
+print('<출력>')
+for i in range(9):
+    print('{} * {} = {}'.format(int(dan), i+1, int(dan)*(i+1)))

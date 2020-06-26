@@ -15,3 +15,21 @@ score : 88
 A
 
 """
+
+print('<입력>')
+scr = input('score : ')
+
+print('<출력>')
+
+if int(scr) < 21:
+    grade = 'F'
+elif int(scr) < 41:
+    grade = 'D'
+elif int(scr) < 61:
+    grade = 'C'
+elif int(scr) < 81:
+    grade = 'B'
+else:
+    grade = 'A'
+
+print(grade)

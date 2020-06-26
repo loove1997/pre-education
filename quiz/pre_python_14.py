@@ -19,3 +19,19 @@ HELLO
 입력 형식이 잘못되었습니다.
 
 """
+
+def isEnglish(word): #영어면 True, 하나라도 영어가 아니면 False
+    for i in word:
+        if ord('a') <= ord(i.lower()) <= ord('z'):
+            continue
+        else:
+            return False
+    return True
+
+print('<입력>')
+word = input()
+
+if isEnglish(word):
+    print(word.swapcase()) #대소문자 swap
+else:
+    print('입력 형식이 잘못되었습니다.')

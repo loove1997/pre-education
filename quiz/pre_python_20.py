@@ -12,3 +12,21 @@
 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 짝 아자
 
 """
+
+print('<출력>')
+
+for num in range(1, 101): #1~100
+    strnum = str(num)
+    clap = False #3,6,9가 들어가면 true
+
+    for a in strnum:
+        if a == '3' or a == '6' or a == '9': #짝이되는 경우
+            print('짝 ', end='')
+            clap = True
+            break
+
+    if clap == False: #짝이 아닌 경우
+        if num % 5 == 0: #아자인 경우
+            print('아자  ', end='')
+        else: #모두 아닌경우 숫자 출력
+            print(num,'  ', end='')

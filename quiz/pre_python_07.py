@@ -5,3 +5,13 @@
 <출력>
  45
 """
+sum = 0
+
+for i in range(100):
+    sum = sum + (i+1)
+
+    if sum > 1000:
+        print('<출력>')
+        print(i+1)
+        break
+

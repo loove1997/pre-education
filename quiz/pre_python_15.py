@@ -8,3 +8,14 @@
 <출력>
 남자
 """
+
+print('<입력>')
+rrn = input('주민등록번호 : ')
+
+print('<출력>')
+sex = int(rrn.split('-')[1][0]) #'-'를 기준으로 2개로 쪼갠 후 뒷번호중 첫번째 번호
+if sex == 1 or sex == 3:
+    print('남자')
+elif sex == 2 or sex == 4:
+    print('여자')
+

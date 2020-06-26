@@ -14,3 +14,13 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+new_list = []
+
+for n in file:
+    file_name = n.split('.')[0] #'.'를 기준으로 요소를 나눔
+    new_list.append(file_name)
+
+print('<출력>')
+print(new_list)
