@@ -13,3 +13,14 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+
+def is_palindrome(word):
+    for syll in range(0, len(word)//2):
+        #맨앞글자와 맨뒷글자 비교 -> 점점 가운데로 오면서 비교
+        if word[syll] != word[len(word)-syll-1]:
+            return False
+
+    return True
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))
